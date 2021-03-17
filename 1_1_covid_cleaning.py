@@ -1,4 +1,5 @@
 import pandas as pd
+import shapely.wkt as shp
 
 # Importing the original data file
 covid_orig = pd.read_csv('COVID-19_Cases_and_Deaths_Summarized_by_Geography.csv')
