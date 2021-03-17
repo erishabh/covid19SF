@@ -34,6 +34,12 @@ covid_clean = covid_clean[['census_tract', 'count', 'acs_population', 'covid_per
 # Sorting the dataframe based on census tract
 covid_clean = covid_clean.sort_values(by = ['census_tract'], ascending = True)
 
+# Renaming the multipolygon column to geometry
+covid_clean = covid_clean.rename(columns = {'multipolygon': 'geometry'})
+
+# Converting the multipoygon column to polygon data type
+covid_clean['geometry'] = covid_clean['geometry'].apply(lambda x: shp.loads(x))
+
 # Exporting dataframe as csv file
 covid_clean.to_csv('SF_covid_concentration_clean.csv', index = False, header = True)
 
