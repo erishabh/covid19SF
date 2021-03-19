@@ -58,8 +58,7 @@ if (show_plots):
     indeg_plot.set_ylabel('% of Tract Population with Covid-19 Diagnosis')
     indeg_plot.set_title('Indigenous Population vs Covid-19 Diagnosis by Percent of Tract Populaton')
     plt.show()
+    
+    print('********************** ALL PLOTS SHOWN **********************')
 else:
     print('********************** NOT SHOWING PLOTS **********************')
-
-print(covid_data.columns)
-print(max(covid_data['bipoc_pop_percent']))

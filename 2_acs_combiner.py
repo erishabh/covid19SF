@@ -12,12 +12,12 @@ acs_data = acs_data.merge(race_orig, on = 'census_tract')
 acs_data = acs_data.merge(median_income_orig, on = 'census_tract')
 
 # Creating all the percentage columns
-acs_data['low_income_pop_percent'] = acs_data['low_income_pop'] / acs_data['total_pop']
-acs_data['hispanic_pop_percent'] = acs_data['hispanic_pop'] / acs_data['total_pop']
-acs_data['afam_pop_percent'] = acs_data['afam_pop'] / acs_data['total_pop']
-acs_data['asian_pop_percent'] = acs_data['asian_pop'] / acs_data['total_pop']
-acs_data['indigenous_pop_percent'] = acs_data['indigenous_pop'] / acs_data['total_pop']
-acs_data['bipoc_pop_percent'] = acs_data['bipoc_pop'] / acs_data['total_pop']
+acs_data['low_income_pop_percent'] = (acs_data['low_income_pop'] / acs_data['total_pop']) * 100
+acs_data['hispanic_pop_percent'] = (acs_data['hispanic_pop'] / acs_data['total_pop']) * 100
+acs_data['afam_pop_percent'] = (acs_data['afam_pop'] / acs_data['total_pop']) * 100
+acs_data['asian_pop_percent'] = (acs_data['asian_pop'] / acs_data['total_pop']) * 100
+acs_data['indigenous_pop_percent'] = (acs_data['indigenous_pop'] / acs_data['total_pop']) * 100
+acs_data['bipoc_pop_percent'] = (acs_data['bipoc_pop'] / acs_data['total_pop']) * 100
 
 # Dropping rows where [total_pop] is 0
 acs_data_clean = acs_data[acs_data['total_pop'] != 0]

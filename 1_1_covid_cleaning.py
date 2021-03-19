@@ -27,7 +27,7 @@ covid_clean['acs_population'] = covid_clean['acs_population'].replace(regex = r'
 
 # Creating [covid_percent] column
 covid_clean['acs_population'] = covid_clean['acs_population'].astype(int)
-covid_clean['covid_percent'] = covid_clean['count'] / covid_clean['acs_population']
+covid_clean['covid_percent'] = (covid_clean['count'] / covid_clean['acs_population']) * 100
 
 # Reorder columns in dataframe
 covid_clean = covid_clean[['census_tract', 'count', 'acs_population', 'covid_percent', 'multipolygon']]
