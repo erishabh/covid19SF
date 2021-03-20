@@ -13,7 +13,11 @@ Scripts that help in data cleaning for ACS data - Used for Story Mapping Project
     COVID-19 Cases and Deaths Summarized by Geography
     COVID Vaccinations Given to SF Residents Over Time
     COVID-19 Cases Summarized by Race and Ethnicity
-
   SF gov:
-
+  
+    COVID-19 Vaccination Sites
+  Urban Institute:
+  
+    Estimated Low Income Jobs Lost to COVID-19
+  
 
