@@ -11,3 +11,9 @@ Scripts that help in data cleaning for ACS data - Used for Story Mapping Project
   SF Open Data Portal:
   
     COVID-19 Cases and Deaths Summarized by Geography
+    COVID Vaccinations Given to SF Residents Over Time
+    COVID-19 Cases Summarized by Race and Ethnicity
+
+  SF gov:
+
+
